@@ -33,5 +33,16 @@ class SessionControler{
             return res.json(row)
         })
     }
+
+    index(req, res){
+        db.all(`SELECT * FROM user`,(err, rows)=>{
+            if(err){
+                console.log("erro")
+            }
+            else{
+                return res.json(rows)
+            }
+        })
+    }
 }
 module.exports = new SessionControler()
