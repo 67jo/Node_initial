@@ -1,0 +1,11 @@
+GET http://localhost:3030/1
+
+###
+
+POST  http://localhost:3030/
+Content-Type: application/json
+
+{
+    "nome":"Calos",
+    "email":"Carlos@45gmail.com"
+}
